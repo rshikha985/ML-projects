@@ -1,4 +1,4 @@
-#eCommerce Recommendation System
+#Ecommerce Recommendation System
 This project implements a hybrid recommendation system for an eCommerce platform, utilizing both Collaborative Filtering and Content-Based Filtering techniques to provide personalized recommendations to users.
 
 Tech Stack:

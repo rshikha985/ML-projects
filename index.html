@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Recommendation System</title>
+</head>
+<body>
+    <h1>Welcome to the Ecommerce Recommendation System</h1>
+
+    <form method="POST">
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id" required><br><br>
+
+        <label for="item_name">Item Name:</label>
+        <input type="text" id="item_name" name="item_name" required><br><br>
+
+        <input type="submit" value="Get Recommendations">
+    </form>
+
+    {% if recommendations %}
+        <h2>Top 10 Hybrid Recommendations for User {{ target_user_id }} and Item "{{ item_name }}"</h2>
+        <ul>
+            {% for item in recommendations %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
